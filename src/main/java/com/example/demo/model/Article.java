@@ -11,8 +11,14 @@ public class Article {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long id;
     public String title;
+    public String content;
     public String author;
 
-    public Article() {
+    public Article() {}
+
+    public Article(String title, String content, String author) {
+        this.title = title;
+        this.content = content;
+        this.author = author;
     }
 }
